@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Container from '../components/container'
+import Layout from '@/components/layout'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
+import Container from '@/components/container'
 import { motion } from 'framer-motion'
-import sanity from "../lib/sanity"
+import sanity from "@/lib/sanity"
 
 export default function Home({ home, allServices, allProjects }) {
 
