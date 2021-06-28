@@ -135,6 +135,7 @@ export const getStaticProps = async () => {
   const home = await sanity.fetch(homeQuery);
   const allServices = await sanity.fetch(allServiceQuery);
   const allProjects = await sanity.fetch(allProjectQuery);
+  
   return {
     props: { home, allServices, allProjects } // will be passed to the page component as props
   };
