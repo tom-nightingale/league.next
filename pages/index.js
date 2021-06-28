@@ -8,6 +8,8 @@ import sanity from "@/lib/sanity"
 
 export default function Home({ home, allServices, allProjects }) {
 
+  console.log(allProjects);
+
   return (
 
     <Layout>
@@ -125,6 +127,7 @@ const allServiceQuery = `*[_type == "service"]
 const allProjectQuery = `*[_type == "project"]
 {
   _id,
+  slug,
   title,
   projectImage,
   clientReview,
