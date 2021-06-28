@@ -2,9 +2,6 @@
 @tailwind base;
 @tailwind components;
 
-/* Default Typography Styles */
-/* @import '_typography.css'; */
-
 /* Tailwind Utilities */
 @tailwind utilities;
 

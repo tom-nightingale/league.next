@@ -1,11 +1,7 @@
 module.exports = {
+  mode: 'jit',
   purge: {
-      content: ['./pages/**/*.js', './components/**/*.js'],
-      options: {
-        safelist: [
-            /^wp/,
-        ],
-    },
+    content: ['./pages/**/*.js', './components/**/*.js'],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -40,14 +36,14 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          light: "#eee",
-          DEFAULT: "#ccc",
-          dark: "#666",
+          light: "#01B3F5",
+          DEFAULT: "#021F2C",
+          dark: "#000000",
         },
         secondary: {
-          light: "#f83",
-          DEFAULT: "#d0dfe5",
-          dark: "#c0ced3",
+          light: "#f54674",
+          DEFAULT: "#F31650",
+          dark: "#cc0a3d",
         },
       },
       spacing: {
@@ -86,8 +82,6 @@ module.exports = {
     textDecoration: ['group-hover', 'hover', 'focus', 'group-focus'],
   },
   plugins: [
-    require("tailwindcss-filters"),
-    require('@tailwindcss/forms'),
   ],
   corePlugins: {
     container: false,
